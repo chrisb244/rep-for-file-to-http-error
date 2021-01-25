@@ -1,0 +1,165 @@
+body {
+	background-color: black;
+	color: #FF360C;
+	font-family: calibri;
+	font-size: 20px;
+	margin: 30px;
+}
+
+a  { 
+	color: inherit;
+	text-decoration:none; 
+	font-family: Times New Roman;
+} 
+/*
+h1 {
+	color: orange;
+	text-align: center;
+	font-size: 60px;
+	margin-top: 250px;
+}
+
+p {
+	display: block;
+}
+
+input {
+	background-color: #FFDD00;
+}
+
+#left-text {
+	text-align: left;
+	line-height: 2;
+	margin-left: 100px;
+}
+
+#center-text {
+	text-align: center;
+}
+	
+.meme {
+	border: solid #45AA45;
+}
+ */
+/* img {
+	border-radius: 5%;
+	border: 5px solid #cdc566;
+	width: 40%;
+	
+	border-bottom-width: 50px;
+	border-top-width: 45px;
+	border-left-width: 80px;
+} 
+
+div {
+	margin-left:50px;
+	margin-right:100px;
+}*/
+
+/* table {
+	border: 1px solid black;
+	width: 90%
+}
+
+td {
+	border: 20px solid darkgreen;
+	padding: 5px;
+	text-align: bottom;
+	background-color: #E3FF00;
+	border-left-style: solid blue;
+}
+
+td:nth-child(even) {
+	background-color: orange;
+}
+	
+tr:nth-child(odd) {
+	background-color: white;
+	
+} */
+
+/* Popup container */
+.popup {
+  margin-left: 20px;
+  margin-top: 1px;
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  font-size: 30px;
+  visibility: hidden;
+  width: 160px;
+  background-color: white;
+  color: darkgreen;
+  text-align: center;
+  border-radius: 15px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: orange transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 9;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+} 
+
+/* tooltip begins */
+.tooltip {
+  cursor: help;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted orange;
+}
+
+.tooltip .tooltiptext {
+  color: orange;
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

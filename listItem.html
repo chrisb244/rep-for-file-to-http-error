@@ -1,4 +1,8 @@
-<li>
-	<list-item ng-repeat="item in list.items"></list-item>
-	<button ng-click="list1.removeItem($index);">ReMoVe iTeM</button>
-</li>
+<h3>title: {{ list.myTitle }}</h3>
+	<ol>
+		<li ng-repeat="item in list.items">
+			{{ item.quantity }} of {{ item.name }}
+			<button ng-click="list.onRemove({$index: $index});">bad remove item</button>
+		</li>
+	</ol>
+	<div class="error" ng-transclude>cookies detected</div>

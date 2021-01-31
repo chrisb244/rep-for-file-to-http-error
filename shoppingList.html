@@ -1,9 +1,19 @@
 <!-- index12 sL -->
-<h3>title: {{ list.myTitle }}</h3>
+<!-- <h3>title: {{ list.myTitle }}</h3>
 	<ol>
 		<li ng-repeat="item in list.items">
 			{{ item.quantity }} of {{ item.name }}
 			<button ng-click="list.onRemove({$index: $index});">bad remove item</button>
 		</li>
 	</ol>
-	<div class="error" ng-transclude>cookies detected</div>
+	<div class="error" ng-transclude>cookies detected</div> -->
+
+<!-- index14 sL -->
+<h3>Title: {{ $ctrl.myTitle }}</h3>
+<ol>
+  <li ng-repeat="item in $ctrl.items">
+    {{ item.quantity }} of {{ item.name }}
+    <button ng-click="$ctrl.remove($index);">Remove Item</button>
+  </li>
+</ol>
+<div class="error">WARNING! WARNING! COOKIES DETECTED!</div>
